@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    %sveltekit.head%
+</head>
+
+<body>
+    <div id="svelte">%sveltekit.body%</div>
+</body>
+
+</html>
+
+<style>
+    body {
+        background-position: left top;
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-color: var(--brand-color);
+    }
+
+    * {
+        box-sizing: border-box;
+        color:white;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    :root {
+        --brand-color: #475569;
+        --dark-color: #1E293B;
+        --mid-color: #CBD5E1;
+        --light-color: #F8FAFC;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 80px 0 80px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: var(--dark-color);
+    }
+
+    nav .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: -1em 0;
+        flex: 1 0 auto;
+    }
+
+    .nav-links .link {
+        position: relative;
+        margin: 1em;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .nav-logo {
+        position: relative;
+        line-height: 1;
+        font-size: 1.1rem;
+        color: white;
+    }
+</style>
