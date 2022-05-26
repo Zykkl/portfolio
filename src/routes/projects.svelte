@@ -1,5 +1,5 @@
 <script context="module">
-	import { ApolloClient, InMemoryCache, gql, HttpLink } from '@apollo/client/core';
+	import { ApolloClient, InMemoryCache, gql, HttpLink } from '@apollo/client/core/core.cjs';
 	import { variables } from '$lib/variables';
 	const apollo = new ApolloClient({
 		link: new HttpLink({
