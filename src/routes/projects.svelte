@@ -15,7 +15,12 @@
 			query: gql`
 				{
 					user(login: "zykkl") {
-						repositories(first: 10, privacy: PUBLIC, affiliations: OWNER) {
+						repositories(
+							first: 10
+							privacy: PUBLIC
+							affiliations: OWNER
+							orderBy: { field: CREATED_AT, direction: DESC }
+						) {
 							edges {
 								node {
 									name
