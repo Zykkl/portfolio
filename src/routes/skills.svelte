@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <svelte:head>
 	<title>Skills</title>
 </svelte:head>
